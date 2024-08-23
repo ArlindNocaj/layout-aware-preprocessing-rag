@@ -39,7 +39,7 @@ More complex examples:
 * Converting PDF to Markdown --> 02-textractor.ipynb
 * TODO: take sm
 webpages:
-* Lanchain Playwright
+* Langchain Playwright
 
 ## 1. Interactive Textract Demo in AWS console
 
@@ -49,5 +49,5 @@ Try the [interactive Textract Demo for layout analysis](https://us-east-1.consol
 ## 
 
 Additional Resources
-
+* [Amazon Textract’s new Layout feature introduces efficiencies in general purpose and generative AI document processing tasks](https://aws.amazon.com/blogs/machine-learning/amazon-textracts-new-layout-feature-introduces-efficiencies-in-general-purpose-and-generative-ai-document-processing-tasks/)
 * [Deep dive into chunking of complex documents with layout analysis](https://github.com/aws-samples/layout-aware-document-processing-and-retrieval-augmented-generation/tree/main)
