@@ -3,16 +3,28 @@
 RAG based systems are a powerful approach to extend the context of LLM requests with additional relevant information.
 Just chunking the text of documents into sentences or paragraphs is not enough to maintain the full context of the information.
 
-Looking at a research paper for example, it makes a huge difference if a sentence is under the "Related work" or "Results" section.
+Looking at a research paper for example, it can make a huge difference if a statement like ""The neural network achieved an accuracy of 95% on the test" is under the "Related work" or "Results" section. In the Related Work section it means that this level of accuracy has already been achieved in earlier studies. When the same statement appears in the "Results" section, it carries a different significance. It represents a finding from a current study and suggests that the researchers have developed a new or improved method.
 
-The goal of this demo is to show you some of the methods that you can use for preprocessing documents, so that you can improve the information retrieval process of RAG.
+In this repo we show how you can extend RAG systems by considering additional semantics using Layout-aware preprocessing.
+We utilize Amazon Textract's layout feature. This feature allows you to extract content from your document while maintaining its layout and reading format. Amazon Textract Layout feature is able to detect the following sections:
+
+* Titles
+* Headers
+* Sub-headers
+* Text
+* Tables
+* Figures
+* List
+* Footers
+* Page Numbers
+* Key-Value pairs
 
 # What is Retrieval Augmented Generation RAG?
-* Easy diagram, of RAG (paolo, search twitter for some of that)
 
-# Why Layout aware document preprocessing?
+The following diagram gives a detailled overview how RAG (Retrieval Agumented Generation) works. Image is based on [1](https://lightning.ai/lightning-ai/studios/rag-using-cohere-command-r).
+<img src="images/rag-overview.png" alt="Image showing how RAG works" width="600"/>
 
-# How to you use layout-aware document preprocessing on my case?
+# How to you use layout-aware document preprocessing ?
 
 The main take aways are: 
 
