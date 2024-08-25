@@ -21,12 +21,16 @@ We utilize Amazon Textract's layout feature. This feature allows you to extract 
 
 # What is Retrieval Augmented Generation RAG?
 
+Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
+
 The following diagram gives a detailled overview how RAG (Retrieval Agumented Generation) works. Image is based on [1](https://lightning.ai/lightning-ai/studios/rag-using-cohere-command-r).
 <img src="images/rag-overview.png" alt="Image showing how RAG works" width="600"/>
 
-# How to you use layout-aware document preprocessing ?
+# How do you use layout-aware document preprocessing ?
 
-The main take aways are: 
+Documents often contain various elements like headings, paragraphs, tables, and lists that convey semantic meaning. Traditional chunking methods, which typically break text into fixed-size segments, can lead to a loss of context and meaning. Layout-aware preprocessing seeks to preserve the relationships between these elements by chunking them based on their logical structure rather than arbitrary token counts.
+
+In this repo you will be able to explore the followig techniques: 
 
 * 0. Explore layout-aware document processing using [interactive Textract Demo in AWS Console](https://us-east-1.console.aws.amazon.com/textract/home?region=us-east-1#/demo) 
 * 1. Utilize Langchain AmazonPDFLoader ([sample_notebook](01-langchain-textract.ipynb) 
