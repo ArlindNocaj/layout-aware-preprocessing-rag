@@ -41,10 +41,10 @@ In this repo you will be able to explore the following approaches:
 
 More complex examples:
 * Asking questions on tabular data: example_01-qna-tabular-data .ipynb, [details](https://aws-samples.github.io/amazon-textract-textractor/notebooks/tabular_data_linearization_continued.html#)
-* Converting PDF to HTML --> 02-textractor.ipynb
-* Converting PDF to Markdown --> 02-textractor.ipynb
-* TODO: take sm
-webpages:
+* [Converting PDF to HTML](#convert_to_html),  [02-textractor.ipynb](#convert_to_html)
+* [Converting PDF to Markdown](#convert_to_md), [02-textractor.ipynb](#convert_to_md)
+* [Layout-aware Chunking, incl. Figures](#layout_chunking),  [02-textractor.ipynb](#layout_chunking)
+
 
 ## Interactive Textract Demo with Layout Visualization in AWS console
 
