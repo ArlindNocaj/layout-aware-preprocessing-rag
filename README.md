@@ -26,29 +26,36 @@ Retrieval-Augmented Generation (RAG) is the process of optimizing the output of 
 The following diagram gives a detailled overview how RAG (Retrieval Agumented Generation) works. Image is based on [1](https://lightning.ai/lightning-ai/studios/rag-using-cohere-command-r).
 <img src="images/rag-overview.png" alt="Image showing how RAG works" width="800"/>
 
-The semantic and hierarchical structure of the documents needs to be additionally considered during the chunking step to improve the information retrieval results.  
+The semantic and hierarchical structure of the documents needs to be additionally considered during the chunking step to improve the information retrieval results.
 
-# How do you use layout-aware document preprocessing ?
+# What is Layout-ware preprocessing for RAG?
 
 Documents often contain various elements like headings, paragraphs, tables, and lists that convey semantic meaning. Traditional chunking methods, which typically break text into fixed-size segments, can lead to a loss of context and meaning. Layout-aware preprocessing seeks to preserve the relationships between these elements by chunking them based on their logical structure rather than arbitrary token counts.
 
+<img src="images/textract-layout-sample-01.png" alt="semantic layout aware segmentation" width="800"/>
+
+
+# How to use layout-aware document preprocessing ?
+
+
+
 In this repo you will be able to explore the following approaches: 
 
-* Try the [interactive Textract Demo with layout visualization in AWS Console](https://us-east-1.console.aws.amazon.com/textract/home?region=us-east-1#/demo) 
+* Try the [interactive Textract Demo with layout visualization in AWS Console](https://console.aws.amazon.com/textract/home?#/demo) 
 * Utilize Langchain AmazonPDFLoader ([sample_notebook](01-langchain-textract.ipynb)) 
 * Utilize [Amazon Textract Textractor Library](https://aws-samples.github.io/amazon-textract-textractor/index.html) ([sample notebook](02-textractor.ipynb))
 * [Textract API and AWS SDK](https://docs.aws.amazon.com/textract/latest/dg/sdk-general-information-section.html)
 
 More complex examples:
 * Asking questions on tabular data: example_01-qna-tabular-data .ipynb, [details](https://aws-samples.github.io/amazon-textract-textractor/notebooks/tabular_data_linearization_continued.html#)
-* [Converting PDF to HTML](#convert_to_html),  [02-textractor.ipynb](#convert_to_html)
-* [Converting PDF to Markdown](#convert_to_md), [02-textractor.ipynb](#convert_to_md)
-* [Layout-aware Chunking, incl. Figures](#layout_chunking),  [02-textractor.ipynb](#layout_chunking)
+* [Converting PDF to HTML](02-textractor.ipynb#convert_to_html),  [02-textractor.ipynb](02-textractor.ipynb#convert_to_html)
+* [Converting PDF to Markdown](02-textractor.ipynb#convert_to_md), [02-textractor.ipynb](02-textractor.ipynb#convert_to_md)
+* [Layout-aware Chunking, incl. Figures](02-textractor.ipynb#layout_chunking),  [02-textractor.ipynb](02-textractor.ipynb#layout_chunking)
 
 
 ## Interactive Textract Demo with Layout Visualization in AWS console
 
-Try the [interactive Textract Demo for layout analysis](https://us-east-1.console.aws.amazon.com/textract/home?region=us-east-1#/demo) in the AWS Console.
+Try the [interactive Textract Demo for layout analysis](https://console.aws.amazon.com/textract/home?#/demo) in the AWS Console.
 ![alt text](images/layout_analysis_page_0.png "Layout analysis of first page")
 
 Additional Resources
