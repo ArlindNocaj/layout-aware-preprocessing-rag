@@ -42,7 +42,7 @@ Documents often contain various elements like headings, paragraphs, tables, and 
 In this repo you will be able to explore the following approaches: 
 
 * Try the [interactive Textract Demo with layout visualization in AWS Console](https://console.aws.amazon.com/textract/home?#/demo) 
-* Utilize Langchain AmazonPDFLoader ([sample_notebook](01-langchain-textract.ipynb)) 
+* Utilize Langchain [AmazonPDFLoader](https://api.python.langchain.com/en/latest/document_loaders/langchain_community.document_loaders.pdf.AmazonTextractPDFLoader.html) ([sample_notebook](01-langchain-textract.ipynb)) 
 * Utilize [Amazon Textract Textractor Library](https://aws-samples.github.io/amazon-textract-textractor/index.html) ([sample notebook](02-textractor.ipynb))
 * [Textract API and AWS SDK](https://docs.aws.amazon.com/textract/latest/dg/sdk-general-information-section.html)
 
